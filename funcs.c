@@ -8,6 +8,6 @@
 void print_top(stack_t **stack, unsigned int line_number)
 {
 	if (stack == NULL || *stack == NULL)
-		more_err(6, line_number);
+		fprintf(stderr, "L%d: can't pint, stack empty\n", line_number);
 	printf("%d\n", (*stack)->n);
 }
