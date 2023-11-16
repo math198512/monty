@@ -1,3 +1,5 @@
+#include "monty.h"
+
 /**
  * print_top - Prints the top node of the stack.
  * @stack: Pointer to a pointer pointing to top node of the stack.
