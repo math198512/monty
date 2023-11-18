@@ -1,8 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
 
-#define UNUSED(x) (void)(x)
-#define _GNU_SOURCE
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
@@ -49,6 +47,7 @@ void free_nodes(void);
 void print_st(stack_t **, unsigned int);
 void add_to_st(stack_t **, unsigned int);
 void add_to_queue(stack_t **new_node, __attribute__((unused))unsigned int ln);
+void swap_nodes(stack_t **stack, unsigned int line_number);
 
 void fun_call(op_func, char *, char *, int, int);
 
