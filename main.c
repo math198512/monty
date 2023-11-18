@@ -1,5 +1,7 @@
 #include "monty.h"
 
+stack_t *head = NULL;
+
 /**
 * main - monty code interpreter
 * @argc: argc
@@ -24,7 +26,7 @@ int main(int argc, char *argv[])
  * @n: Number to go inside the node.
  * Return: Upon sucess a pointer to the node. Otherwise NULL.
  */
-stack_t *head = NULL;
+
 stack_t *create_node(int n)
 {
 	stack_t *node;
