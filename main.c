@@ -31,7 +31,7 @@ stack_t *create_node(int n)
 {
 	stack_t *node;
 
-	node = malloc(sizeof(stack_t());
+	node = malloc(sizeof(stack_t));
 	if (node == NULL)
 		fprintf(stderr, "Error: malloc failed\n");
 	node->next = NULL;
