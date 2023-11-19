@@ -1,12 +1,17 @@
 #include "monty.h"
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
+#define _GNU_SOURCE
+
+stack_t *head = NULL;
 /**
 * main - monty code interpreter
 * @argc: argc
 * @argv: argv
 * Return: return
 */
-stack_t *head = NULL;
 
 int main(int argc, char *argv[])
 {
@@ -38,6 +43,7 @@ stack_t *create_node(int n)
 	node->n = n;
 	return (node);
 }
+
 
 /**
  * add_to_queue - Adds a node to the queue.
