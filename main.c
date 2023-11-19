@@ -1,8 +1,4 @@
 #include "monty.h"
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-stack_t *head = NULL;
 
 /**
 * main - monty code interpreter
@@ -10,6 +6,7 @@ stack_t *head = NULL;
 * @argv: argv
 * Return: return
 */
+stack_t *head = NULL;
 
 int main(int argc, char *argv[])
 {
