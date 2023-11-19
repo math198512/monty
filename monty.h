@@ -44,6 +44,8 @@ extern stack_t *head;
 typedef void (*op_func)(stack_t **, unsigned int);
 
 /*Stack operations*/
+void push(stack_t **stack, unsigned int n);
+void pall(stack_t **stack, unsigned int line_number);
 stack_t *create_node(int n);
 void free_nodes(void);
 void print_st(stack_t **, unsigned int);
